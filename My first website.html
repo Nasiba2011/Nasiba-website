@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="alternate" href="/rss" type="application/rss+xml" title="Nasiba's website">
+    <title>Nasiba's website</title>
+</head>
+<body>
+
+<header> 
+    <h1 align="center">Hello, everyone!!!</h1>
+    <h4 align="center">My name is Nasiba and I am a little programmer. It's my first website!</h4>
+</header>
+
+<aside id="center">
+    <p>YOU ARE WELCOME!</p>
+</aside>
+
+<article><p><i><b>Hey everyone! 👋 I'm Nasiba, a passionate learner who loves coding, math, and all things tech! 💻✨  
+    Ever since I started exploring programming, I've been fascinated by how technology shapes our world.  
+    I enjoy solving problems, building projects, and challenging myself with new skills.  
+
+    This website is my personal space where I share my journey as a young programmer. Whether it's coding,  
+    web development, or creative ideas, I believe in continuous learning and improvement.  
+    I'm always excited to create something new and explore the endless possibilities of technology. 🚀  
+
+    Let's build, innovate, and grow together! Welcome to my first website! 🎉  </b></i></p></article>
+
+
+    
+<style>
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+    }
+    .first { animation-delay: 0s; } /* Birinchi rasm darhol chiqadi */
+    .second { animation-delay: 2s; } /* Ikkinchi rasm 2 soniyadan keyin */
+    .third { animation-delay: 4s; } /* Uchinchi rasm 4 soniyadan keyin */
+    
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    </style>
+    
+
+<button class="gradient-button" onclick="toggleBio()" id="bioButton">My biography</button>
+<p id="bioText" style="display: none;"><i>
+    Nasiba is a young programmer and technology enthusiast. She has been interested in mathematics and IT since childhood, and is currently studying Python, HTML, and CSS programming languages. Nasiba is highly motivated to further her knowledge and prepare for the IT program at Yonsei University.
+
+    She is engaged in creating websites, programming, and solving problems. At the same time, she is a big fan of Real Madrid and prefers Ronaldo. In her free time, she likes to listen to BTS music, especially songs like "Black Swan" and "On the Street".
+    
+    Nasiba continues to actively study in order to become a successful IT specialist in the future and create her own programs. She is not only writing code, but also writing her own story "Seven Wings".
+    
+    Her main goal is to develop her knowledge, create new innovations, and find her place in the IT world! 🚀
+</i></p>
+
+
+
+<style>
+    #bioButton {
+        display: block;
+        margin: 20px auto;
+    }
+    #bioText {
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+    }
+    </style>
+    
+
+<style>
+.gradient-button {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.gradient-button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+</style>
+
+<script>
+function toggleBio() {
+    let bio = document.getElementById("bioText");
+    let button = document.getElementById("bioButton");
+
+    if (bio.style.display === "none") {
+        bio.style.display = "block";
+        button.innerText = "Hide biography";
+    } else {
+        bio.style.display = "none";
+        button.innerText = "My biography";
+    }
+}
+</script>
+
+
+
+<style>
+    body {
+        background: linear-gradient(270deg, #ff9a9e, #fad0c4);
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
+    }
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    </style>
+
+
+<div class="fade-in">
+    <img src="images/laptop.jpg" width="326" height="326" alt="Laptop">
+    <img src="images/study.jpg" width="326" height="326" alt="Study">
+    <img src="images/coding.jpg" width="326" height="326" alt="Coding">
+</div>
+
+<style>
+.fade-slider {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.fade-slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: fade 9s infinite;
+}
+.fade-slider img:nth-child(1) { animation-delay: 0s; }
+.fade-slider img:nth-child(2) { animation-delay: 3s; }
+.fade-slider img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+</style>
+
+<footer class="footer">
+    <p align="center">&copy; 2025 Nasiba's Website | All rights reserved.</p>
+</footer>
+
+
